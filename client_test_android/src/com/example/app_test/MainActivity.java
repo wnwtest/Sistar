@@ -49,8 +49,6 @@ public class MainActivity extends Activity {
            try{
             String json = jsonParser.GetHttpRequest(url,
                     "GET", "");
-            //String message = json.getString(TAG_MESSAGE);
-            //return message;
             return json;
             
            }catch(Exception e){
@@ -62,6 +60,5 @@ public class MainActivity extends Activity {
             pDialog.dismiss();
             Toast.makeText(getApplicationContext(), message, 8000).show();
         }
-        }
-    
+    }
 }
